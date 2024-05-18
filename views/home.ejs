@@ -1,0 +1,15 @@
+<%- include("./partials/header.ejs") %>
+
+            <h1 id="head">WHICH <span id="villain"> VILLAIN</span> ARE YOU IN <span id="sk">STEPHEN KING'S</span> NOVELS?</h1>
+            <div class="container">
+                <form action="/submit" method="POST">
+                    <label>Enter Full Name:</label>
+                    <input class="fillout" type="text" name="fullname" placeholder="Stephen King">
+                    <label>Enter Year of Birth: </label>
+                    <input class="fillout" type="text" name="year" placeholder="1947">    
+                    <input id="button" type="submit" value="GO!">
+                </form>
+                <img srcset="/images/sk.jpg" src="https://wallpapercave.com/wp/wp1888923.jpg" alt="Stephen King">
+            </div>
+
+<%- include("./partials/footer.ejs") %>

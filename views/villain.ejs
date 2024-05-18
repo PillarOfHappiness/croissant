@@ -1,0 +1,34 @@
+<%- include("./partials/header.ejs") %>
+
+        <% if(villain != ""){ %>    <!--Checks if you have matched with a villain -->
+            <h1>Your Stephen King Villain Persona is:</h1> 
+            <h1 style="background-color:red; color:black;"> <%= villain %> </h1>
+            <div class="details">
+                <div class="general">
+                    <h3 id="haunted"><u>About Yourself:</u></h3>
+                    <span class="attri"> 
+                        <h5>Gender:</h5>
+                        <%= gender %>
+                    </span>
+                    <span class="attri"> 
+                        <h5>Status:</h5>
+                        <%= status %> 
+                    </span>
+                </div>
+                <h5 id="haunted">Books You Haunted:</h5>
+                <% if(books.length > 0){ %> <!-- Some villains played in more than one book thus showing them all respectively-->
+                    <ul>
+                        <% for( let book of books ) { %>
+                            <li><%= book.title %></li>
+                        <% } %>
+                    </ul>
+                <% } else{ %>
+                    <p>You don't haunt a single book!</p>
+                <% } %>
+            </div>
+
+        <% } else{ %>   <!-- unfortunate! or is it? you decide!-->
+            <h1>Unfortunately, you're just not cut out to be a villain.</h1>
+        <% } %>
+    
+<%- include("./partials/footer.ejs") %>

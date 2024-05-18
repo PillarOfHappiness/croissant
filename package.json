@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  },
+  "scripts": {
+    "predeploy": "node index.js",
+    "deploy": "gh-pages -d build" 
+  },
+  "homepage": "https://PillarOfHappiness.github.io/baguette/final"
+}

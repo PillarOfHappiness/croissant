@@ -11,7 +11,7 @@
   },
   "scripts": {
     "predeploy": "node index.js",
-    "deploy": "gh-pages -d node index.js" 
+    "deploy": "gh-pages -d node index.js"
   },
   "homepage": "https://PillarOfHappiness.github.io/croissant"
 }

@@ -13,5 +13,5 @@
     "predeploy": "node index.js",
     "deploy": "node index.js"
   },
-  "homepage": "https://PillarOfHappiness.github.io/croissant"
+  "homepage": "https://PillarOfHappiness.github.io/croissant/home"
 }

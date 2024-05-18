@@ -13,5 +13,5 @@
     "predeploy": "node index.js",
     "deploy": "gh-pages -d node index.js" 
   },
-  "homepage": "https://PillarOfHappiness.github.io/baguette/final"
+  "homepage": "https://PillarOfHappiness.github.io/croissant"
 }
